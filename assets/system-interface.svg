@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 360" role="img" aria-labelledby="title desc">
-  <title id="title">Michael Vargas - System Interface V2</title>
-  <desc id="desc">Expanded futuristic system interface panel with improved readability and arc-reactor style HUD aesthetics.</desc>
+  <title id="title">Michael Vargas - System Interface V3</title>
+  <desc id="desc">Expanded futuristic system interface panel with descending and ascending menu animation synchronized with core modules.</desc>
 
   <defs>
     <radialGradient id="bgGlow3" cx="50%" cy="50%" r="80%">
@@ -52,12 +52,24 @@
 
   <!-- decorative pixels -->
   <g fill="#00e5ff">
-    <rect x="92" y="78" width="8" height="8" opacity="0.18"><animate attributeName="opacity" values="0.05;0.40;0.05" dur="2.6s" repeatCount="indefinite"/></rect>
-    <rect x="118" y="98" width="10" height="10" opacity="0.20"><animate attributeName="opacity" values="0.05;0.55;0.05" dur="3.1s" repeatCount="indefinite"/></rect>
-    <rect x="1452" y="82" width="8" height="8" opacity="0.20"><animate attributeName="opacity" values="0.05;0.50;0.05" dur="2.9s" repeatCount="indefinite"/></rect>
-    <rect x="1478" y="102" width="6" height="6" opacity="0.20"><animate attributeName="opacity" values="0.05;0.35;0.05" dur="3.4s" repeatCount="indefinite"/></rect>
-    <rect x="130" y="270" width="10" height="10" opacity="0.22"><animate attributeName="opacity" values="0.05;0.55;0.05" dur="2.7s" repeatCount="indefinite"/></rect>
-    <rect x="1468" y="272" width="10" height="10" opacity="0.22"><animate attributeName="opacity" values="0.05;0.55;0.05" dur="2.7s" repeatCount="indefinite"/></rect>
+    <rect x="92" y="78" width="8" height="8" opacity="0.18">
+      <animate attributeName="opacity" values="0.05;0.40;0.05" dur="2.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="118" y="98" width="10" height="10" opacity="0.20">
+      <animate attributeName="opacity" values="0.05;0.55;0.05" dur="3.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1452" y="82" width="8" height="8" opacity="0.20">
+      <animate attributeName="opacity" values="0.05;0.50;0.05" dur="2.9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1478" y="102" width="6" height="6" opacity="0.20">
+      <animate attributeName="opacity" values="0.05;0.35;0.05" dur="3.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="130" y="270" width="10" height="10" opacity="0.22">
+      <animate attributeName="opacity" values="0.05;0.55;0.05" dur="2.7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1468" y="272" width="10" height="10" opacity="0.22">
+      <animate attributeName="opacity" values="0.05;0.55;0.05" dur="2.7s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
   <!-- LEFT SECTION -->
@@ -87,168 +99,198 @@
 
   <!-- CENTER SECTION -->
   <g font-family="monospace" text-anchor="middle">
-
-    <text x="800" y="88"
-          fill="#d4feff"
-          font-size="21"
-          letter-spacing="4"
-          opacity="0.96">
+    <text x="800" y="88" fill="#d4feff" font-size="21" letter-spacing="4" opacity="0.96">
       SYSTEM CORE // INITIALIZED
     </text>
 
     <line x1="565" y1="100" x2="1035" y2="100"
-          stroke="#00e5ff"
-          stroke-width="1"
-          opacity="0.45"/>
+          stroke="#00e5ff" stroke-width="1" opacity="0.45"/>
 
-    <!-- ROTATING ACTIVE MODULE -->
-
-    <text x="800" y="155"
-          fill="#00e5ff"
-          font-size="34"
-          letter-spacing="1"
-          filter="url(#glow3)">
-      &gt; SYSTEMS ENGINEERING
-      <animate
-        attributeName="opacity"
-        dur="10s"
-        repeatCount="indefinite"
-        calcMode="discrete"
-        values="1;0;0;0;0"
-        keyTimes="0;0.2;0.4;0.6;0.8"/>
+    <text x="800" y="123" fill="#9ef8ff" font-size="13" letter-spacing="3" opacity="0.58">
+      ACTIVE SEQUENCE
     </text>
 
-    <text x="800" y="155"
-          fill="#00e5ff"
-          font-size="34"
-          letter-spacing="1"
-          filter="url(#glow3)">
-      &gt; SOFTWARE DEVELOPMENT
-      <animate
-        attributeName="opacity"
-        dur="10s"
-        repeatCount="indefinite"
-        calcMode="discrete"
-        values="0;1;0;0;0"
-        keyTimes="0;0.2;0.4;0.6;0.8"/>
-    </text>
+    <!-- menu frame -->
+    <rect x="565" y="136" width="470" height="150"
+          fill="#021018" fill-opacity="0.28"
+          stroke="#00e5ff" stroke-opacity="0.16"
+          stroke-width="1"/>
 
-    <text x="800" y="155"
-          fill="#00e5ff"
-          font-size="34"
-          letter-spacing="1"
-          filter="url(#glow3)">
-      &gt; IT INFRASTRUCTURE
-      <animate
-        attributeName="opacity"
-        dur="10s"
-        repeatCount="indefinite"
-        calcMode="discrete"
-        values="0;0;1;0;0"
-        keyTimes="0;0.2;0.4;0.6;0.8"/>
-    </text>
-
-    <text x="800" y="155"
-          fill="#00e5ff"
-          font-size="34"
-          letter-spacing="1"
-          filter="url(#glow3)">
-      &gt; NETWORKS
-      <animate
-        attributeName="opacity"
-        dur="10s"
-        repeatCount="indefinite"
-        calcMode="discrete"
-        values="0;0;0;1;0"
-        keyTimes="0;0.2;0.4;0.6;0.8"/>
-    </text>
-
-    <text x="800" y="155"
-          fill="#00e5ff"
-          font-size="31"
-          letter-spacing="1"
-          filter="url(#glow3)">
-      &gt; DATABASES / AUTOMATION
-      <animate
-        attributeName="opacity"
-        dur="10s"
-        repeatCount="indefinite"
-        calcMode="discrete"
-        values="0;0;0;0;1"
-        keyTimes="0;0.2;0.4;0.6;0.8"/>
-    </text>
-
-    <!-- Supporting information -->
-
-    <text x="800" y="201"
-          fill="#9ef8ff"
-          font-size="21"
-          letter-spacing="1"
-          opacity="0.82">
-      SOFTWARE // INFRASTRUCTURE // NETWORKS // DATA
-    </text>
-
-    <text x="800" y="235"
-          fill="#9ef8ff"
-          font-size="18"
-          letter-spacing="1"
-          opacity="0.68">
-      DEVELOPMENT // OPERATIONS // AUTOMATION
-    </text>
-
-    <text x="800" y="272"
-          fill="#9ef8ff"
-          font-size="16"
-          letter-spacing="2"
-          opacity="0.52">
-      BUILDING TECHNOLOGY FOR REAL-WORLD SYSTEMS
-    </text>
-
-    <!-- Blinking terminal cursor -->
-
-    <rect x="1080" y="130"
-          width="12"
-          height="26"
-          fill="#00e5ff"
-          opacity="0.88">
-
-      <animate
-        attributeName="opacity"
-        values="1;0;1"
-        dur="1.1s"
-        repeatCount="indefinite"/>
-
+    <!-- active selection background -->
+    <rect x="590" y="148" width="390" height="22"
+          fill="#00e5ff" opacity="0.10"
+          stroke="#00e5ff" stroke-opacity="0.28"
+          stroke-width="1">
+      <animate attributeName="y"
+               values="148;176;204;232;260;232;204;176;148"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
     </rect>
 
+    <!-- active selector arrow -->
+    <text x="610" y="164"
+          fill="#00e5ff"
+          font-size="22"
+          text-anchor="start"
+          filter="url(#glow3)">
+      &gt;
+      <animate attributeName="y"
+               values="164;192;220;248;276;248;220;192;164"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
+    </text>
+
+    <!-- static menu text -->
+    <text x="800" y="164" fill="#8fbec5" font-size="24" opacity="0.55">SYSTEMS ENGINEERING</text>
+    <text x="800" y="192" fill="#8fbec5" font-size="24" opacity="0.55">SOFTWARE DEVELOPMENT</text>
+    <text x="800" y="220" fill="#8fbec5" font-size="24" opacity="0.55">IT INFRASTRUCTURE</text>
+    <text x="800" y="248" fill="#8fbec5" font-size="24" opacity="0.55">NETWORKS</text>
+    <text x="800" y="276" fill="#8fbec5" font-size="22" opacity="0.55">DATABASES / AUTOMATION</text>
+
+    <!-- highlighted active text -->
+    <text x="800" y="164" fill="#00e5ff" font-size="24" filter="url(#glow3)">
+      SYSTEMS ENGINEERING
+      <animate attributeName="opacity"
+               values="1;0;0;0;0;0;0;0;1"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
+    </text>
+
+    <text x="800" y="192" fill="#00e5ff" font-size="24" filter="url(#glow3)">
+      SOFTWARE DEVELOPMENT
+      <animate attributeName="opacity"
+               values="0;1;0;0;0;0;0;1;0"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
+    </text>
+
+    <text x="800" y="220" fill="#00e5ff" font-size="24" filter="url(#glow3)">
+      IT INFRASTRUCTURE
+      <animate attributeName="opacity"
+               values="0;0;1;0;0;0;1;0;0"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
+    </text>
+
+    <text x="800" y="248" fill="#00e5ff" font-size="24" filter="url(#glow3)">
+      NETWORKS
+      <animate attributeName="opacity"
+               values="0;0;0;1;0;1;0;0;0"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
+    </text>
+
+    <text x="800" y="276" fill="#00e5ff" font-size="22" filter="url(#glow3)">
+      DATABASES / AUTOMATION
+      <animate attributeName="opacity"
+               values="0;0;0;0;1;0;0;0;0"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
+    </text>
+
+    <text x="800" y="318" fill="#9ef8ff" font-size="15" letter-spacing="2" opacity="0.52">
+      BUILDING TECHNOLOGY FOR REAL-WORLD SYSTEMS
+    </text>
   </g>
 
   <!-- RIGHT SECTION -->
   <g font-family="monospace" fill="#9ef8ff">
     <text x="1185" y="85" font-size="20" letter-spacing="3" opacity="0.92">CORE MODULES</text>
-    <line x1="1185" y1="98" x2="1498" y2="98" stroke="#00e5ff" stroke-width="1" opacity="0.45"/>
+    <line x1="1185" y1="98" x2="1498" y2="98"
+          stroke="#00e5ff" stroke-width="1" opacity="0.45"/>
 
-    <text x="1185" y="136" font-size="16" opacity="0.72">SOFTWARE ENGINEERING</text>
-    <rect x="1185" y="145" width="220" height="14" rx="2" fill="#071c24" stroke="#00e5ff" stroke-opacity="0.16"/>
-    <rect x="1185" y="145" width="172" height="14" rx="2" fill="#00e5ff" opacity="0.74">
-      <animate attributeName="width" values="146;188;172;180;172" dur="5s" repeatCount="indefinite"/>
+    <!-- active row highlight -->
+    <rect x="1176" y="126" width="250" height="24"
+          fill="#00e5ff" opacity="0.08"
+          stroke="#00e5ff" stroke-opacity="0.22"
+          stroke-width="1">
+      <animate attributeName="y"
+               values="126;156;186;216;246;216;186;156;126"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
     </rect>
 
-    <text x="1185" y="184" font-size="16" opacity="0.72">IT INFRASTRUCTURE</text>
-    <rect x="1185" y="193" width="220" height="14" rx="2" fill="#071c24" stroke="#00e5ff" stroke-opacity="0.16"/>
-    <rect x="1185" y="193" width="178" height="14" rx="2" fill="#00e5ff" opacity="0.74">
-      <animate attributeName="width" values="152;194;178;186;178" dur="4.4s" repeatCount="indefinite"/>
+    <!-- row 1 -->
+    <text x="1185" y="142" font-size="15" opacity="0.72">SYSTEMS ENGINEERING</text>
+    <rect x="1185" y="150" width="210" height="10" rx="2"
+          fill="#071c24" stroke="#00e5ff" stroke-opacity="0.14"/>
+    <rect x="1185" y="150" width="150" height="10" rx="2"
+          fill="#2ea9b8" opacity="0.35"/>
+    <rect x="1185" y="150" width="150" height="10" rx="2"
+          fill="#00e5ff" opacity="0.85">
+      <animate attributeName="opacity"
+               values="0.85;0.18;0.18;0.18;0.18;0.18;0.18;0.18;0.85"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
     </rect>
 
-    <text x="1185" y="232" font-size="16" opacity="0.72">NETWORKS</text>
-    <rect x="1185" y="241" width="220" height="14" rx="2" fill="#071c24" stroke="#00e5ff" stroke-opacity="0.16"/>
-    <rect x="1185" y="241" width="164" height="14" rx="2" fill="#00e5ff" opacity="0.74">
-      <animate attributeName="width" values="138;182;164;172;164" dur="5.6s" repeatCount="indefinite"/>
+    <!-- row 2 -->
+    <text x="1185" y="172" font-size="15" opacity="0.72">SOFTWARE DEVELOPMENT</text>
+    <rect x="1185" y="180" width="210" height="10" rx="2"
+          fill="#071c24" stroke="#00e5ff" stroke-opacity="0.14"/>
+    <rect x="1185" y="180" width="146" height="10" rx="2"
+          fill="#2ea9b8" opacity="0.35"/>
+    <rect x="1185" y="180" width="146" height="10" rx="2"
+          fill="#00e5ff" opacity="0.18">
+      <animate attributeName="opacity"
+               values="0.18;0.85;0.18;0.18;0.18;0.18;0.18;0.85;0.18"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
     </rect>
 
-    <text x="1185" y="280" font-size="16" opacity="0.72">DATABASES / AUTOMATION</text>
-    <rect x="1185" y="289" width="220" height="14" rx="2" fill="#071c24" stroke="#00e5ff" stroke-opacity="0.16"/>
-    <rect x="1185" y="289" width="168" height="14" rx="2" fill="#00e5ff" opacity="0.74">
-      <animate attributeName="width" values="142;186;168;176;168" dur="4.8s" repeatCount="indefinite"/>
+    <!-- row 3 -->
+    <text x="1185" y="202" font-size="15" opacity="0.72">IT INFRASTRUCTURE</text>
+    <rect x="1185" y="210" width="210" height="10" rx="2"
+          fill="#071c24" stroke="#00e5ff" stroke-opacity="0.14"/>
+    <rect x="1185" y="210" width="154" height="10" rx="2"
+          fill="#2ea9b8" opacity="0.35"/>
+    <rect x="1185" y="210" width="154" height="10" rx="2"
+          fill="#00e5ff" opacity="0.18">
+      <animate attributeName="opacity"
+               values="0.18;0.18;0.85;0.18;0.18;0.18;0.85;0.18;0.18"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
+    </rect>
+
+    <!-- row 4 -->
+    <text x="1185" y="232" font-size="15" opacity="0.72">NETWORKS</text>
+    <rect x="1185" y="240" width="210" height="10" rx="2"
+          fill="#071c24" stroke="#00e5ff" stroke-opacity="0.14"/>
+    <rect x="1185" y="240" width="138" height="10" rx="2"
+          fill="#2ea9b8" opacity="0.35"/>
+    <rect x="1185" y="240" width="138" height="10" rx="2"
+          fill="#00e5ff" opacity="0.18">
+      <animate attributeName="opacity"
+               values="0.18;0.18;0.18;0.85;0.18;0.85;0.18;0.18;0.18"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
+    </rect>
+
+    <!-- row 5 -->
+    <text x="1185" y="262" font-size="15" opacity="0.72">DATABASES / AUTOMATION</text>
+    <rect x="1185" y="270" width="210" height="10" rx="2"
+          fill="#071c24" stroke="#00e5ff" stroke-opacity="0.14"/>
+    <rect x="1185" y="270" width="144" height="10" rx="2"
+          fill="#2ea9b8" opacity="0.35"/>
+    <rect x="1185" y="270" width="144" height="10" rx="2"
+          fill="#00e5ff" opacity="0.18">
+      <animate attributeName="opacity"
+               values="0.18;0.18;0.18;0.18;0.85;0.18;0.18;0.18;0.18"
+               dur="16s"
+               repeatCount="indefinite"
+               calcMode="discrete"/>
     </rect>
   </g>
 </svg>
