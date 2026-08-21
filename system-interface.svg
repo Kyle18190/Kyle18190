@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 270" role="img" aria-labelledby="title desc">
+  <title id="title">Michael Vargas - System Interface</title>
+  <desc id="desc">Animated futuristic system interface panel matching the arc reactor banner.</desc>
+
+  <defs>
+    <radialGradient id="bgGlow2" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#071622"/>
+      <stop offset="60%" stop-color="#030911"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <linearGradient id="lineGrad2" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00e5ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00e5ff" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+
+    <pattern id="scan2" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="1" fill="#8cf7ff" opacity="0.05"/>
+    </pattern>
+
+    <filter id="glow2" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="270" fill="url(#bgGlow2)"/>
+  <rect width="1600" height="270" fill="url(#grid2)"/>
+  <rect width="1600" height="270" fill="url(#scan2)"/>
+
+  <!-- top and bottom lines -->
+  <line x1="80" y1="38" x2="1520" y2="38" stroke="url(#lineGrad2)" stroke-width="1.5" opacity="0.35"/>
+  <line x1="80" y1="232" x2="1520" y2="232" stroke="url(#lineGrad2)" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- scanning pulse -->
+  <rect x="-260" y="0" width="260" height="270" fill="url(#lineGrad2)" opacity="0.07">
+    <animate attributeName="x" values="-300;1660" dur="9s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- border frame -->
+  <rect x="18" y="18" width="1564" height="234" fill="none" stroke="#00e5ff" stroke-opacity="0.18" stroke-width="1"/>
+  <rect x="26" y="26" width="1548" height="218" fill="none" stroke="#00e5ff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- decorative pixels -->
+  <g fill="#00e5ff">
+    <rect x="100" y="62" width="7" height="7" opacity="0.18"><animate attributeName="opacity" values="0.05;0.40;0.05" dur="2.6s" repeatCount="indefinite"/></rect>
+    <rect x="123" y="79" width="10" height="10" opacity="0.18"><animate attributeName="opacity" values="0.05;0.55;0.05" dur="3.1s" repeatCount="indefinite"/></rect>
+    <rect x="1440" y="64" width="8" height="8" opacity="0.22"><animate attributeName="opacity" values="0.05;0.50;0.05" dur="2.9s" repeatCount="indefinite"/></rect>
+    <rect x="1468" y="86" width="6" height="6" opacity="0.20"><animate attributeName="opacity" values="0.05;0.35;0.05" dur="3.4s" repeatCount="indefinite"/></rect>
+    <rect x="135" y="206" width="10" height="10" opacity="0.22"><animate attributeName="opacity" values="0.05;0.55;0.05" dur="2.7s" repeatCount="indefinite"/></rect>
+    <rect x="1472" y="205" width="10" height="10" opacity="0.22"><animate attributeName="opacity" values="0.05;0.55;0.05" dur="2.7s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- Left panel -->
+  <g font-family="monospace" fill="#9ef8ff">
+    <text x="90" y="58" font-size="14" letter-spacing="2" opacity="0.9">SYSTEM IDENTITY</text>
+    <line x1="90" y1="68" x2="330" y2="68" stroke="#00e5ff" stroke-width="1" opacity="0.45"/>
+
+    <text x="90" y="95" font-size="12" opacity="0.72">USER</text>
+    <text x="185" y="95" font-size="12" opacity="0.95">MICHAEL VARGAS</text>
+
+    <text x="90" y="118" font-size="12" opacity="0.72">FIELD</text>
+    <text x="185" y="118" font-size="12" opacity="0.95">SYSTEMS ENGINEERING</text>
+
+    <text x="90" y="141" font-size="12" opacity="0.72">CORE</text>
+    <text x="185" y="141" font-size="12" opacity="0.95">SOFTWARE + INFRASTRUCTURE</text>
+
+    <text x="90" y="164" font-size="12" opacity="0.72">FOCUS</text>
+    <text x="185" y="164" font-size="12" opacity="0.95">BUILD / AUTOMATE / OPTIMIZE</text>
+
+    <text x="90" y="198" font-size="11" opacity="0.60">STATUS</text>
+    <rect x="160" y="189" width="120" height="12" rx="2" fill="#071c24" stroke="#00e5ff" stroke-opacity="0.18"/>
+    <rect x="160" y="189" width="84" height="12" rx="2" fill="#00e5ff" opacity="0.78">
+      <animate attributeName="width" values="70;102;84;95;84" dur="4.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="288" y="199" font-size="11" opacity="0.88">ONLINE</text>
+  </g>
+
+  <!-- Center panel -->
+  <g font-family="monospace" text-anchor="middle">
+    <text x="800" y="58" fill="#d4feff" font-size="14" letter-spacing="3" opacity="0.95">SYSTEM CORE // INITIALIZED</text>
+    <line x1="610" y1="68" x2="990" y2="68" stroke="#00e5ff" stroke-width="1" opacity="0.45"/>
+
+    <text x="800" y="108" fill="#00e5ff" font-size="24" letter-spacing="1" filter="url(#glow2)">&gt; SYSTEMS ENGINEERING</text>
+    <text x="800" y="138" fill="#9ef8ff" font-size="17" letter-spacing="1" opacity="0.88">SOFTWARE DEVELOPMENT // IT INFRASTRUCTURE</text>
+    <text x="800" y="164" fill="#9ef8ff" font-size="15" letter-spacing="1" opacity="0.72">NETWORKS // DATABASES // AUTOMATION</text>
+    <text x="800" y="192" fill="#9ef8ff" font-size="12" letter-spacing="2" opacity="0.52">BUILDING TECHNOLOGY FOR REAL-WORLD SYSTEMS</text>
+
+    <!-- blinking cursor -->
+    <rect x="954" y="95" width="10" height="18" fill="#00e5ff" opacity="0.9">
+      <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Right panel -->
+  <g font-family="monospace" fill="#9ef8ff">
+    <text x="1240" y="58" font-size="14" letter-spacing="2" opacity="0.9">CORE MODULES</text>
+    <line x1="1240" y1="68" x2="1490" y2="68" stroke="#00e5ff" stroke-width="1" opacity="0.45"/>
+
+    <text x="1240" y="94" font-size="12" opacity="0.72">SOFTWARE ENGINEERING</text>
+    <rect x="1240" y="100" width="190" height="10" rx="2" fill="#071c24" stroke="#00e5ff" stroke-opacity="0.16"/>
+    <rect x="1240" y="100" width="150" height="10" rx="2" fill="#00e5ff" opacity="0.72">
+      <animate attributeName="width" values="128;165;150;158;150" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="1240" y="132" font-size="12" opacity="0.72">IT INFRASTRUCTURE</text>
+    <rect x="1240" y="138" width="190" height="10" rx="2" fill="#071c24" stroke="#00e5ff" stroke-opacity="0.16"/>
+    <rect x="1240" y="138" width="156" height="10" rx="2" fill="#00e5ff" opacity="0.72">
+      <animate attributeName="width" values="132;170;156;162;156" dur="4.4s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="1240" y="170" font-size="12" opacity="0.72">NETWORKS</text>
+    <rect x="1240" y="176" width="190" height="10" rx="2" fill="#071c24" stroke="#00e5ff" stroke-opacity="0.16"/>
+    <rect x="1240" y="176" width="142" height="10" rx="2" fill="#00e5ff" opacity="0.72">
+      <animate attributeName="width" values="116;155;142;148;142" dur="5.6s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="1240" y="208" font-size="12" opacity="0.72">DATABASES / AUTOMATION</text>
+    <rect x="1240" y="214" width="190" height="10" rx="2" fill="#071c24" stroke="#00e5ff" stroke-opacity="0.16"/>
+    <rect x="1240" y="214" width="146" height="10" rx="2" fill="#00e5ff" opacity="0.72">
+      <animate attributeName="width" values="120;160;146;152;146" dur="4.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
